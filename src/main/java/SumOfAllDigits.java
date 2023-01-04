@@ -8,7 +8,7 @@ public class SumOfAllDigits {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
         Integer total = Stream.of(String.valueOf(number).split(""))
-        .collect(Collectors.summingInt(Integer::parseInt)).intValue();
+                .collect(Collectors.summingInt(Integer::parseInt)).intValue();
         System.out.print(total);
         scanner.close();
     }
